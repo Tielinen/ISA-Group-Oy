@@ -4,21 +4,24 @@
     <img class="header__logo-image" src="/assets/images/placeholder_logo.png" alt="Company Logo">
   </a>
 
-  <!-- Block: header__nav -->
-  <nav class="header__nav">
-    <!-- Element: header__nav-item -->
-    <ul class="header__nav-list">
-      {% for nav_item in site.data.navigation %}
-        <li class="header__nav-item">
-          <a href="{{ nav_item.url | relative_url }}" class="header__nav-link">{{ nav_item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>   
-  </nav>
-  <button class="header__hamburger" type="button" aria-label="Toggle navigation">
-    <span class="header__hamburger-line"></span>
-    <span class="header__hamburger-line"></span>
-    <span class="header__hamburger-line"></span>
-    <span class="header__hamburger-line"></span>
-  </button>
+  <!-- Block: mobile-menu -->
+  <div class="mobile-menu">
+    <!-- Block: header__nav -->
+    <nav class="header__nav">
+      <!-- Element: header__nav-item -->
+      <ul class="header__nav-list">
+        {% for nav_item in site.data.navigation %}
+          <li class="header__nav-item">
+            <a href="{{ nav_item.url | relative_url }}" class="header__nav-link">{{ nav_item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>   
+    </nav>
+    <button class="header__hamburger" type="button" aria-label="Toggle navigation">
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+    </button>
+  </div>
 </header>
