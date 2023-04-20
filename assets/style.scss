@@ -1,5 +1,8 @@
 ---
 ---
+
+//global
+
 @import "variables";
 
 @font-face {
@@ -41,6 +44,12 @@ a {
   color: $menu-item-text-color;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $gold-medal-color;
+  font-weight: 300;
+}
+
+//Header
 .header {
   display: flex;
   align-items: center;
@@ -59,10 +68,9 @@ a {
   max-width: 203px;
 }
 
-.mobile-menu {
+.header__mobile-menu {
   position: relative;
-  
-}  
+} 
 
 .header__nav {
   display: none;
@@ -74,8 +82,7 @@ a {
   margin-top: 9px;
   right: -9px;
   font-size: 14px;
-  padding: 0 47px 21px 18px;
-  
+  padding: 0 47px 21px 18px;  
 }
 
 .header__nav-item {
@@ -105,4 +112,20 @@ a {
 
 .header__nav--visible {
   display: block;
+}
+
+// Main content
+.main-content {
+  padding: 35px 15px 61px 15px;
+}
+
+// Hero
+.hero__heading {
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+.hero__image {
+  width: 100%;
 }

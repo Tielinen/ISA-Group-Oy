@@ -1,11 +1,15 @@
 ---
 layout: base
 title: Etusivu
+
+hero_heading: Asennamme telineet ja sääsuojat
+hero_image: assets/images/paakuva_655x710.jpg
+hero_image_alt: Description of the image
 ---
 
-<section class="hero">
-  <h1 class="hero__heading">Asennamme telineet ja sääsuojat</h1>
-  <figure class="hero__figure">
-    <img src="big-image.jpg" alt="Description of the image" class="hero__image">
-  </figure>
-</section>
+{% 
+  include hero-section.html
+    heading=page.hero_heading
+    image=page.hero_image
+    image_alt=page.hero_image_alt
+%}
