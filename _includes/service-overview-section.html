@@ -1,0 +1,8 @@
+<section class="service-overview">
+  <h2 class="service-overview__heading">{{ include.heading }}</h2>
+  {% for paragraph in include.paragraphs %}
+    <p class="service-overview__paragraph">
+      {{ paragraph }}
+    </p>
+    {% endfor %}
+</section>

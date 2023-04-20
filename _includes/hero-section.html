@@ -1,6 +1,11 @@
 <section class="hero">
   <h1 class="hero__heading">{{ include.heading }}</h1>
   <figure class="hero__figure">
-    <img src="assets/images/paakuva_655x710.jpg" alt="Description of the image" class="hero__image">
+    <picture>
+      <source media="(max-width: 767px)" srcset="{{ page.hero_image.small_655w }}">
+      <source media="(min-width: 768px) and (max-width: 1280px)" srcset="{{ page.hero_image.medium_1280w }}">
+      <source media="(min-width: 1281px)" srcset="{{ page.hero_image.large_1920w }}">
+      <img src="{{ page.hero_image.large_1920w }}" alt="Image description" class="hero__image">
+    </picture>
   </figure>
 </section>

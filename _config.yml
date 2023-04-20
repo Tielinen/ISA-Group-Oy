@@ -31,7 +31,6 @@ github_username:  jekyll
 
 # Build settings
 
-# |JT|
 # theme: minima
 plugins:
   - jekyll-feed
@@ -55,3 +54,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+title: "ISA Group Oy"

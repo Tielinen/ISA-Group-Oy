@@ -37,16 +37,12 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
+  color: $text-color;
 }
 
 a {
   text-decoration: none;
   color: $menu-item-text-color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $gold-medal-color;
-  font-weight: 300;
 }
 
 //Header
@@ -120,12 +116,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Hero
+.hero {
+  margin-bottom: 33px;
+}
 .hero__heading {
   font-size: 30px;
   line-height: 100%;
   margin-bottom: 30px;
+  color: $gold-medal-color;
+  font-weight: 300;
 }
 
 .hero__image {
   width: 100%;
+}
+
+//Service-overview
+.service-overview__heading {
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 242px;
+  line-height: 130%;;
+}
+
+.service-overview__paragraph:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.service-overview__paragraph {
+  line-height: 150%;
 }

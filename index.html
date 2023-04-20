@@ -3,8 +3,18 @@ layout: base
 title: Etusivu
 
 hero_heading: Asennamme telineet ja sääsuojat
-hero_image: assets/images/paakuva_655x710.jpg
+
+hero_image:
+  small_655w: /assets/images/paakuva_655x710.jpg
+  medium_1280w: /assets/images/paakuva_1280x665.jpg
+  large_1920w: /assets/images/paakuva_1920_998x.jpg
+
 hero_image_alt: Description of the image
+
+service_overview_heading: Sääsuojien ja telineiden vuokrauspalvelut kuuluvat yrityksemme palveluihin
+service_overview_paragraphs:
+  - ISA Group Oy (Itä-Suomen Asennus) on sääsuojaratkaisuihin ja telinepalveluihin erikoistunut yritys. Toimimme valtakunnallisesti lähes 20 vuoden kokemuksella.
+  - Meiltä saat kokonaisvaltaisin palvelun ammattilaisensuunnittelusta lähtien niin suuriin rakennuskohteisiin kuin pienempiinkin kohteisiin. Meillä on useiden vuosien kokemusta teollisuudessa toimimisesta.
 ---
 
 {% 
@@ -12,4 +22,10 @@ hero_image_alt: Description of the image
     heading=page.hero_heading
     image=page.hero_image
     image_alt=page.hero_image_alt
+%}
+
+
+{% include service-overview-section.html
+    heading=page.service_overview_heading
+    paragraphs=page.service_overview_paragraphs
 %}
